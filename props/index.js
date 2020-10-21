@@ -3,8 +3,12 @@ class App extends React.Component {
         return (
             <div>
      {/* this is the place where is added the components */}
-            <Hello to="Ringo" from="Paul"/>
-            <Hello to="Cher" from="Sonny"/>
+            <Hello 
+            to="Ringo" 
+            from="Paul" 
+            bangs={4}
+            img="https://cdn.pixabay.com/photo/2014/06/11/15/46/graffiti-366829__480.jpg"
+            />
             </div>
         )
     }
