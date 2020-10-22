@@ -19,3 +19,5 @@ class Hello extends React.Component {
 // props is a short for properties.
 // props are immutable.
 // props are for configuring your component.
+
+// Default props are used for give default value for the components
