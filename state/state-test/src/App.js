@@ -5,6 +5,7 @@ import Game2 from './Game2';
 import Rando from './Rando';
 import Button from './Button';
 import BrokenClick from './BrokenClick';
+import StateClicker from './StateClicker';
 
 function App() {
   return (
@@ -12,8 +13,8 @@ function App() {
     <p>Hello there</p>
     <Game />
     <Game2 />
-    <Rando maxNum={7}/>
-    <BrokenClick />
+    <Rando maxNum={0}/>
+    <StateClicker randNum={7}/>
     </div>
   );
 }
