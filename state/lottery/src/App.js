@@ -1,12 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 import Ball from './Ball';
+import Lottery from './Lottery';
 
 function App() {
   return (
     <div className="App">
-      <Ball />
-        
+      <Lottery />
+      <Lottery title="Mini Daily" maxNum={10} maxBalls={4}/>
     </div>
   );
 }
