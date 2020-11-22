@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
-import './WiseSquare.css';
 
-class WiseSquare extends Component {
-    constructor(props){
-        super(props);
-        this.dispenseWisdom = this.dispenseWisdom.bind(this);
-    }
+class ExperimentalWisdownSquare extends Component {
     static defaultProps = {
         messages: [
             "You can never plan the future by the past.",
@@ -14,7 +9,7 @@ class WiseSquare extends Component {
         ]
     }
 
-    dispenseWisdom(){
+    dispenseWisdom = () => {
         let {messages} = this.props;
         let rIndex = Math.floor(Math.random() * messages.length);
         console.log(messages[rIndex]);
@@ -29,14 +24,8 @@ class WiseSquare extends Component {
             </div>
         )
     }
-    // Never .bind(this) within it is called. It will bring performance isssues. 
-    // XXX this is a wrong approach: onMouseEnter={this.dispenseWisdom.bind(this)}
-    // OOO this is a good approach: onMouseEnter={() => this.dispenseWisdom()}
-    /*
-    THIS is the perfect approach: onMouseEnter={this.dispenseWisdom} 
-    After .bind(this) within the constructor only once it will be fine to call the 
-    function within components.
-    */ 
 }
 
-export default WiseSquare;
+// So instead of using a constructor just an arrow function: function = () => {} will
+//  solve this problem.... 
+export default ExperimentalWisdownSquare;
