@@ -11,6 +11,8 @@ class ButtonList extends Component {
     }
 
     changeColor(newColor){
+        // will add the paramenter in newColor
+        // in this case "c" is the parameter 
         this.setState({color: newColor})
     }
 
@@ -22,6 +24,7 @@ class ButtonList extends Component {
         its own color. 
         */
         return (
+            // this.state.color is not equal to props
             <div className="ButtonList" style={{backgroundColor: this.state.color}}>
                 {this.props.colors.map(c => {
                     const colorObjs = {backgroundColor: c};
