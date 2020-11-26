@@ -13,12 +13,6 @@ class Form extends Component {
     handleChange(evt){
         // gets the value from the form and sets to username
 
-        // INSTEAD OF USING USERNAME YOU USE [evt.target.value]
-        /*
-        Since there are an attribut "name" passed as username,
-        email and password the [] will be changed to the corresponding
-        "name".
-        */ 
        this.setState({username: evt.target.value}) 
     }
 
@@ -33,8 +27,10 @@ class Form extends Component {
             <div>
                 <h1>Form Demo</h1>
                 <form onSubmit={this.handleSubmit}>
+                    <label htmlFor="username">Username</label>
                     <input 
                     type="text" 
+                    id="username"
                     value={this.state.username}
                     onChange={this.handleChange}
                     />
