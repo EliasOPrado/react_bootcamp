@@ -8,16 +8,23 @@ import React, { Component } from 'react'
              qty: ''
          }
          this.handleChange = this.handleChange.bind(this);
+         this.handleSubmit = this.handleSubmit.bind(this);
      }
 
      handleChange(evt){
         // the name within the "evt.target.name" is the attribute not the "state"
          this.setState({[evt.target.name]: evt.target.value})
      }
+
+     handleSubmit(evt){
+         this.props.addItem(this.state);
+         this.setState({name: '', qty: ''})
+         evt.preventDefault();
+     }
     render() {
         return (
             <div>
-                <form >
+                <form onSubmit={this.handleSubmit}>
                     <label htmlFor="name">Name:</label>
                     <input 
                     type="text"
@@ -34,6 +41,7 @@ import React, { Component } from 'react'
                     value={this.state.qty}
                     onChange={this.handleChange}
                     />
+                    <button>Add Item</button>
                 </form>
             </div>
         )
