@@ -14,10 +14,10 @@ class NewTodoForm extends Component {
           [evt.target.name]: evt.target.value  
         })
     }
-
+    // Will set the todo form with the following config
     handleSubmit(evt){
         evt.preventDefault();
-        this.props.createTodo({...this.state, id: uuidv4()});
+        this.props.createTodo({...this.state, id: uuidv4(), completed: false});
         // clear form
         this.setState({
             task: ""
