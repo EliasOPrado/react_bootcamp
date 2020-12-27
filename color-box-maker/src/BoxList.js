@@ -8,6 +8,10 @@ class BoxList extends Component {
         this.create = this.create.bind(this);
     }
 
+    remove(){
+        
+    }
+
     create(newBox){
         this.setState({
             boxes: [...this.state.boxes, newBox]
