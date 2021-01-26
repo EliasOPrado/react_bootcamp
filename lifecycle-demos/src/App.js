@@ -6,8 +6,9 @@ import GithubUserInfo from './GithubUserInfo';
 function App() {
   return (
     <div className="App">
-      <GithubUserInfo username='facebook' />
-      <GithubUserInfo username='EliasOPrado' />
+      <ZenQuote />
+      {/* <GithubUserInfo username='facebook' />
+      <GithubUserInfo username='EliasOPrado' /> */}
     </div>
   );
 }
