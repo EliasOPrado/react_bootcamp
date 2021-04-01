@@ -1,6 +1,8 @@
 import React from 'react'
 
 function Greet(props) {
+    // desctructuring props
+    const {name, heroName} = props
     return (
         <div>
             <h1> Hello {props.name}</h1>
