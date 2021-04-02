@@ -4,6 +4,9 @@ import Message from './Message'
 import Counter from './Counter'
 import FunctionClick from './FunctionClick'
 import EventBind from './EventBind'
+import NameList from './NameList'
+import StyleSheets from './StyleSheets'
+import Form from './Form'
 
 function App() {
   return (
@@ -12,8 +15,11 @@ function App() {
       <Greet name='Peter'heroName='Batman' />
       <Message />
       <Counter />
-      <FunctionClick />*/}
+      <FunctionClick />
       <EventBind />
+      <NameList />
+      <StyleSheets primary={true} />*/}
+      <Form />
     </div>
   );
 }
