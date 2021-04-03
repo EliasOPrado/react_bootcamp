@@ -14,7 +14,7 @@ class PostList extends Component {
 
     componentDidMount(){
         // get the url needed or the endpoint api
-        axios.get('https://jsonplaceholder.typicode.com/posts1')
+        axios.get('https://jsonplaceholder.typicode.com/posts')
         // then is the response and setState for the state if the api works
         .then(response => {
             console.log(response)
