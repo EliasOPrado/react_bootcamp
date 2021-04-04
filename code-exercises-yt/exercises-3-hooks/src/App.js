@@ -5,6 +5,9 @@ import HookCounter2 from './components/HookCounter2'
 import HookCounter4 from './components/HookCounter4'
 import HookCounterOne from './components/HookCounterOne'
 import HookMouse from './components/HookMouse'
+import IntervalHookCounter from './components/IntervalHookCounter'
+import DataFetching from './components/DataFetching'
+
 function App() {
   return (
     <div className="App">
@@ -12,8 +15,10 @@ function App() {
       <HookCounter/>
       <HookCounter2/>
       <HookCounter4/> 
-      <HookCounterOne/> */}
+      <HookCounterOne/> 
       <HookMouse />
+      <IntervalHookCounter/>*/}
+      <DataFetching/>
     </div>
   );
 }
